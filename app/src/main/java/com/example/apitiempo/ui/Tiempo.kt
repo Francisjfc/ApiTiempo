@@ -157,14 +157,19 @@ class Tiempo : Fragment() {
 
             if(icono=="01d"||icono=="01n"){
                 binding.appTiempo.background="#00BCD4"
+                //binding.appTiempo.textColor
             }else if(icono=="09d"||icono=="09n"){
                 binding.appTiempo.background=
+                //binding.appTiempo.textColor
             }else if(icono=="11d"||icono=="11n"){
                 binding.appTiempo.background=
+                //binding.appTiempo.textColor
             }else if(icono=="13d"||icono=="13n"){
                 binding.appTiempo.background=
+                //binding.appTiempo.textColor
             }else{
                 binding.appTiempo.background=
+                //binding.appTiempo.textColor
             }
         }
     }
