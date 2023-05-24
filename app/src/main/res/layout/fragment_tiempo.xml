@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/appTiempo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00BCD4"
+    tools:context=".ui.Tiempo">
+
+    <TextView
+        android:id="@+id/Ciudad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        android:textColor="#070707"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Temperatura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="20dp"
+        android:text="20"
+        android:textColor="#000000"
+        android:textSize="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Ciudad" />
+
+    <ImageView
+        android:id="@+id/iconotiempo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Temperatura"
+        app:layout_constraintTop_toBottomOf="@+id/Ciudad"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:id="@+id/tempMax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="TextView"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/Temperatura"
+        app:layout_constraintStart_toStartOf="@+id/Temperatura"
+        app:layout_constraintTop_toBottomOf="@+id/Temperatura" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tempMax"
+        app:layout_constraintEnd_toStartOf="@+id/tempMax"
+        app:layout_constraintTop_toTopOf="@+id/tempMax"
+        tools:src="@drawable/baseline_arrow_upward_24" />
+
+    <TextView
+        android:id="@+id/tempMin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/tempMax"
+        app:layout_constraintStart_toStartOf="@+id/tempMax"
+        app:layout_constraintTop_toBottomOf="@+id/tempMax" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tempMin"
+        app:layout_constraintEnd_toStartOf="@+id/tempMin"
+        app:layout_constraintTop_toTopOf="@+id/tempMin"
+        tools:src="@drawable/baseline_arrow_downward_24" />
+
+    <TextView
+        android:id="@+id/tvSensTermica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:text="Sensación Termica"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tempMin" />
+
+    <TextView
+        android:id="@+id/SensTermica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/tvSensTermica"
+        app:layout_constraintStart_toEndOf="@+id/tvSensTermica"
+        app:layout_constraintTop_toTopOf="@+id/tvSensTermica" />
+
+    <TextView
+        android:id="@+id/tvHumedad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="Humedad"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSensTermica" />
+
+    <TextView
+        android:id="@+id/Humedad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/tvHumedad"
+        app:layout_constraintStart_toEndOf="@+id/tvHumedad" />
+
+    <TextView
+        android:id="@+id/tvPresion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="Presión"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvHumedad" />
+
+    <TextView
+        android:id="@+id/Presion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/tvPresion"
+        app:layout_constraintStart_toEndOf="@+id/tvPresion" />
+
+    <TextView
+        android:id="@+id/tvNivelMar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="Nivel del Mar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPresion" />
+
+    <TextView
+        android:id="@+id/NivelMAR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/tvNivelMar"
+        app:layout_constraintStart_toEndOf="@+id/tvNivelMar" />
+
+    <ImageView
+        android:id="@+id/ivAmaneceer"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNivelMar"
+        app:srcCompat="@drawable/sunrise" />
+
+    <ImageView
+        android:id="@+id/ivAtardecer"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNivelMar"
+        app:srcCompat="@drawable/sunset" />
+
+    <TextView
+        android:id="@+id/amanecer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/ivAmaneceer"
+        app:layout_constraintStart_toStartOf="@+id/ivAmaneceer"
+        app:layout_constraintTop_toBottomOf="@+id/ivAmaneceer" />
+
+    <TextView
+        android:id="@+id/atardecer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/ivAtardecer"
+        app:layout_constraintStart_toStartOf="@+id/ivAtardecer"
+        app:layout_constraintTop_toBottomOf="@+id/ivAtardecer" />
+</androidx.constraintlayout.widget.ConstraintLayout>
