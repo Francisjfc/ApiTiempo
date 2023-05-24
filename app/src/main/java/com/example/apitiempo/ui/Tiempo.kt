@@ -164,7 +164,7 @@ class Tiempo : Fragment() {
             }else if(icono=="13d"||icono=="13n"){
                 binding.appTiempo.background=
             }else{
-
+                binding.appTiempo.background=
             }
         }
     }
