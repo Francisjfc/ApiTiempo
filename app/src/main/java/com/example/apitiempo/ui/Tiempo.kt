@@ -156,19 +156,19 @@ class Tiempo : Fragment() {
            Glide.with(requireContext()).load(url).into(binding.iconotiempo)
 
             if(icono=="01d"||icono=="01n"){
-                binding.appTiempo.background="#00BCD4"
-                //binding.appTiempo.textColor
+                binding.appTiempo.setBackgroundColor(resources.getColor(R.color.despejado))
+                //binding.appTiempo.
             }else if(icono=="09d"||icono=="09n"){
-                binding.appTiempo.background=
+                binding.appTiempo.setBackgroundColor(resources.getColor(R.color.lluvia))
                 //binding.appTiempo.textColor
             }else if(icono=="11d"||icono=="11n"){
-                binding.appTiempo.background=
+                binding.appTiempo.setBackgroundColor(resources.getColor(R.color.tormenta))
                 //binding.appTiempo.textColor
             }else if(icono=="13d"||icono=="13n"){
-                binding.appTiempo.background=
+                binding.appTiempo.setBackgroundColor(resources.getColor(R.color.nieve))
                 //binding.appTiempo.textColor
             }else{
-                binding.appTiempo.background=
+                binding.appTiempo.setBackgroundColor(resources.getColor(R.color.white))
                 //binding.appTiempo.textColor
             }
         }
